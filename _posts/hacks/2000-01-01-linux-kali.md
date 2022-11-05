@@ -4,16 +4,6 @@ date: 2019-01-01T00:00:00-03:00
 last_modified_at: 2022-06-28T00:00:00-03:00
 excerpt_separator: "<!--more-->"
 categories: [firma]
-#tags: [python, pycharm, jupyter, package, pandas]
-#layout: post
-#title: Jupyter Notebook
-#subtitle: Exercícios e Referências
-#tags: [python, pycharm, jupyter, package]
-#image: /img/posts/jupyter_icon.png
-#bigimg: /img/posts/jupyter_big.png
-#gh-repo: michelmetran/package_jupyter
-#gh-badge: [follow, star, watch, fork]
-#comments: true
 ---
 
 
