@@ -1,3 +1,12 @@
+# IDEs
+.vscode/
+.idea/
+
+
+# Outros
+_lixo/
+
+# Originals
 _site
 .sass-cache
 .jekyll-metadata
