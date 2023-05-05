@@ -9,7 +9,9 @@ tags: [python, pycharm, jupyter, package]
 
 Navigate to this location:
 
-> HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall.
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
+```
 
 <br>
 

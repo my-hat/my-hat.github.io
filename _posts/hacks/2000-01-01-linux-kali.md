@@ -1,11 +1,10 @@
 ---
-title: "Kali"
+title: 'Kali'
 date: 2019-01-01T00:00:00-03:00
 last_modified_at: 2022-06-28T00:00:00-03:00
-excerpt_separator: "<!--more-->"
+excerpt_separator: '<!--more-->'
 categories: [firma]
 ---
-
 
 ## Adaptador USB
 
@@ -74,7 +73,6 @@ sudo ifconfig wlan0 up
 <br>
 
 ---
-
 
 ## Sniffing
 
@@ -341,7 +339,6 @@ sudo aireplay-ng --fakeauth 30 -a 70:4F:57:0E:17:58 -h 78:44:76:84:0a:f5 wlan0mo
 <br>
 
 ---
-
 
 ## Tutoriais
 
