@@ -23,7 +23,7 @@ Get-WindowsCapability -Online | Where-Object {$\_.Name -like "_ActiveDirectory.D
 ## Referências
 
 - [Finding Pwned Passwords in Active Directory](https://safepass.me/2020/02/25/finding-pwned-passwords-in-active-directory/)
-- [AD Explorer](https://learn.microsoft.com/en-us/sysinternals/downloads/adexplorer)
+- [Microsoft Learn: **AD Explorer**](https://learn.microsoft.com/en-us/sysinternals/downloads/adexplorer)
 - [Convert ASCII Codes to Characters](https://www.browserling.com/tools/ascii-to-text)
 - [Extract Clear Text Passwords from Active Directory](https://www.youtube.com/watch?v=qnTHtTCe5ck)
 - [How to Crack an Active Directory Password in 5 Minutes or Less](https://www.semperis.com/blog/easy-hacking-active-directory-password/)
